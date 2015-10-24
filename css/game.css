@@ -1,0 +1,26 @@
+.background    { background: rgb(152, 166, 251);
+                 table-layout: fixed;
+                 border-spacing: 0;  
+background-image: url("wee.png");
+    background-repeat: repeat-x;				 }
+.background td { padding: 2;          }
+.lava          { background: rgb(256, 102, 103); }
+.wall          { background: blue;   }
+
+.actor  { position: absolute;  }
+.coin   { background: rgb(255, 223, 89); }
+.player { background: url("bob.png")  ;}
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background: rgb(145, 55, 60);
+}
+.won .player {
+  box-shadow: -1px -5px 8px lime, 4px -6px 8px white;
+}

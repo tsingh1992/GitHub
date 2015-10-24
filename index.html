@@ -1,0 +1,23 @@
+<!doctype html>
+<!--add background sound-->
+<audio id="theme1" src="audio/supermario.mp3" onended="theme1End()"></audio>
+<!--End sound-->
+<script src="code/game.js"></script>
+<script src="code/game_levels.js"></script>
+
+<link rel="stylesheet" href="css/game.css">
+
+
+<body>
+
+
+  <script>
+  var theme1 = document.getElementById("theme1");
+		theme1.play();
+		function theme1End(){
+			theme1.stop();
+		}
+    runGame(GAME_LEVELS, DOMDisplay);
+  </script>
+  
+</body>
