@@ -7,17 +7,21 @@
 
 <link rel="stylesheet" href="css/game.css">
 
-
 <body>
+<!--Table-->
+<div id="myDynamicTable" style="color:#0000FF" background-color= "black" >
+</div>
 
-
+<!--END Table-->
   <script>
-  var theme1 = document.getElementById("theme1");
+	//Adding sound to the game
+		var theme1 = document.getElementById("theme1");
 		theme1.play();
 		function theme1End(){
-			theme1.stop();
+			//hangle the looping of the song when its over. theme.play()
+			theme1.pause();
 		}
+	//END  
     runGame(GAME_LEVELS, DOMDisplay);
   </script>
-  
 </body>
